@@ -1,0 +1,57 @@
+Ejercicio 4
+<?php
+function aSaber($v,$tamano)
+{
+$n = 0;
+$resultado = 0; $n++;
+$i = 0; $n++;
+while ($i < $tamano)
+{
+$resultado = $resultado + $v[$i]; $n++;
+$i = $i + 1; $n++;
+}
+echo "La complejidad del algoritmo es: ", $n, "<br>";
+return $resultado;
+}
+$arreglo = array(5,10,15,20);
+$final = aSaber($arreglo,count($arreglo));
+echo "La suma de los elementos es: ", $final;
+?>
+Ejercicio 5 
+<?php
+function aSaber($v,$tamano)
+{
+$n = 0;
+$resultado = 0; $n++;
+$i = $tamano - 1; $n++;
+while ($i >= 0)
+{
+$resultado = $resultado + $v[$i]; $n++;
+$i = $i - 1; $n++;
+}
+echo "La complejidad del algoritmo es: ", $n, "<br>";
+return $resultado;
+}
+$arreglo = array(2,5,7,9);
+$final = aSaber($arreglo,count($arreglo));
+echo "La suma de los elementos es: ", $final;
+?>
+Ejercicio 6
+<?php
+function aSaber($v,$tamano)
+{
+$n = 0;
+$resultado = 0; $n++;
+$i = $tamano - 1; $n++;
+while ($i >= 0)
+{
+$resultado = $resultado + $v[$i]; $n++;
+$i = $i - 2; $n++;
+}
+echo "La complejidad del algoritmo es: ", $n, "<br>";
+return $resultado;
+}
+$arreglo = array(1,2,3,4);
+$final = aSaber($arreglo,count($arreglo));
+echo "La suma de los elementos es: ", $final;
+?>
